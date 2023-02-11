@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+</head>
+<body>
+     <!--login page-->
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <form class="shadow p-3 mb-5 bg-body rounded" onsubmit="loginFunc()">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="text" id="username" class="form-control" />
+              <label class="form-label" for="form2Example1">Username</label>
+            </div>
+          
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input type="password" id="password" class="form-control" />
+              <label class="form-label" for="form2Example2">Password</label>
+            </div>
+          
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="form2Example34" checked />
+                  <label class="form-check-label" for="form2Example34"> Remember me </label>
+                </div>
+              </div>
+          
+              <div class="col">
+                <!-- Simple link -->
+                <a href="#!">Forgot password?</a>
+              </div>
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+            <!--register-->
+            <div class="text-center">
+              <p>Not a member? <a href="register.html">Register</a></p>
+            </div>
+            <p id="result"></p>
+          </form>
+        </div>
+        <div class="col" style="margin-top: 70px;">
+          <img src="undraw_mobile_login_re_9ntv.svg" class="rounded float-end" alt="login" height="400px" width="400px">
+        </div>
+    </div>
+        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(152.33, 178.084, 223.481, 1)" offset="0%"></stop><stop stop-color="rgba(79.742, 11, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,49L26.7,98C53.3,147,107,245,160,285.8C213.3,327,267,310,320,294C373.3,278,427,261,480,245C533.3,229,587,212,640,171.5C693.3,131,747,65,800,106.2C853.3,147,907,294,960,326.7C1013.3,359,1067,278,1120,261.3C1173.3,245,1227,294,1280,285.8C1333.3,278,1387,212,1440,220.5C1493.3,229,1547,310,1600,351.2C1653.3,392,1707,392,1760,375.7C1813.3,359,1867,327,1920,277.7C1973.3,229,2027,163,2080,163.3C2133.3,163,2187,229,2240,269.5C2293.3,310,2347,327,2400,343C2453.3,359,2507,376,2560,318.5C2613.3,261,2667,131,2720,138.8C2773.3,147,2827,294,2880,310.3C2933.3,327,2987,212,3040,163.3C3093.3,114,3147,131,3200,179.7C3253.3,229,3307,310,3360,310.3C3413.3,310,3467,229,3520,163.3C3573.3,98,3627,49,3680,24.5C3733.3,0,3787,0,3813,0L3840,0L3840,490L3813.3,490C3786.7,490,3733,490,3680,490C3626.7,490,3573,490,3520,490C3466.7,490,3413,490,3360,490C3306.7,490,3253,490,3200,490C3146.7,490,3093,490,3040,490C2986.7,490,2933,490,2880,490C2826.7,490,2773,490,2720,490C2666.7,490,2613,490,2560,490C2506.7,490,2453,490,2400,490C2346.7,490,2293,490,2240,490C2186.7,490,2133,490,2080,490C2026.7,490,1973,490,1920,490C1866.7,490,1813,490,1760,490C1706.7,490,1653,490,1600,490C1546.7,490,1493,490,1440,490C1386.7,490,1333,490,1280,490C1226.7,490,1173,490,1120,490C1066.7,490,1013,490,960,490C906.7,490,853,490,800,490C746.7,490,693,490,640,490C586.7,490,533,490,480,490C426.7,490,373,490,320,490C266.7,490,213,490,160,490C106.7,490,53,490,27,490L0,490Z"></path></svg>
+</body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="portfolio.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"></script>
+</html>
